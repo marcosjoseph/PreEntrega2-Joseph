@@ -1,9 +1,10 @@
 import {Link} from "react-router-dom";
+import "./Producto.css";
 
 
-function Producto ({id, categoria, nombre, descripcion, precio, stock}) {
+function Producto ({id, nombre}) {
     return (
-        <div>
+        <div id="producto">
             <h3>{nombre}</h3>
             <button><Link to={`/producto/${id}`}>Ver más Información</Link></button>
         </div>

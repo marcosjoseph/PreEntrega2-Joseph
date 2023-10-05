@@ -8,18 +8,18 @@ import {getProductosByCategoria, getProductos} from "../../arrayProductos";
 function ItemListContainer ({greeting}) {
 
     const [producto, setProducto] = useState([]);
-    const {categoriaProducto} = useParams();
+    const {idCategoria} = useParams();
 
     useEffect( ()=> {
-        const funcionAsincronica = categoriaProducto ? getProductosByCategoria : getProductos
+        const funcionAsincronica = idCategoria ? getProductosByCategoria : getProductos
 
-        funcionAsincronica(categoriaProducto)
+        funcionAsincronica(idCategoria)
         .then(response => {
             setProducto(response);})
         
         .catch(error => {
             console.error(error)})
-        }, [categoriaProducto])
+        }, [idCategoria])
 
     return (
 

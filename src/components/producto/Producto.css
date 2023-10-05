@@ -1,0 +1,22 @@
+#producto {
+    background-color: #d5bdaf;
+    margin: 20px;
+}
+
+h3 {
+    text-align: center;
+    color:#f5ebe0;
+}
+
+#producto button {
+    border:none;
+    border-radius:5px;
+    margin:5px;
+    background-color: #f5ebe0;
+    color:#76695d;
+}
+
+#producto button:hover {
+    background-color: #76695d;
+    color:#f5ebe0;
+}

@@ -6,7 +6,7 @@ function Home () {
 
         <div>
             <section id="categorias">
-                <ItemListContainer greeting="Categorías" /> 
+                <ItemListContainer className="itemListContainer" greeting="Categorías" /> 
             </section>
         </div>
     )

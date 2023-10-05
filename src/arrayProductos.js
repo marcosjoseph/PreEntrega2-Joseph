@@ -1,7 +1,7 @@
 
 const listaProductos = [
     {
-    "id": 1,
+    "id": "1",
     "categoria": "Mesas",
     "nombre": "Mesa Juana",
     "descripcion": "Hecha en Lapacho y Hierro.",
@@ -9,7 +9,7 @@ const listaProductos = [
     "stock":1
     },
     {
-    "id": 2,
+    "id": "2",
     "categoria": "Escritorios",
     "nombre": "Escritorio Tea",
     "descripcion": "Pino Tea reciclada & hierro",
@@ -17,7 +17,7 @@ const listaProductos = [
     "stock":2
     },
     {
-    "id": 3,
+    "id": "3",
     "categoria": "Espejos",
     "nombre": "Espejo Quebacho",
     "descripcion": "Quebracho Colorado",
@@ -32,23 +32,23 @@ export const getProductos = () => {
     return new Promise ((resolve)=> {
         setTimeout ( ()=> {
             resolve(listaProductos)
-        }, 1000)
+        }, 1000);
     })
     }
 
 export const getProductosById = (idProducto) => {
     return new Promise((resolve) => {
         setTimeout ( ()=> {
-            resolve(listaProductos.find(producto => producto.id === idProducto ))}, 1000)
+            resolve(listaProductos.find(producto => producto.id === idProducto ))}, 1000);
 
         })
 }
 
 
-export const getProductosByCategoria = (categoriaProducto) => {
+export const getProductosByCategoria = (categoria) => {
     return new Promise((resolve) => {
         setTimeout ( ()=> {
-            resolve(listaProductos.find(producto => producto.categoria === categoriaProducto ))}, 1000)
+            resolve(listaProductos.find(producto => producto.categoria === categoria ))}, 1000);
 
         })
 }
