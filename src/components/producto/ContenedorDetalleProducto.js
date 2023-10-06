@@ -1,7 +1,7 @@
 import {useState, useEffect} from "react";
 import {useParams} from "react-router-dom";
 import DetalleProducto from "./DetalleProducto";
-import getProductosById from "../../arrayProductos";
+import {getProductosById} from "../../arrayProductos";
 
 function ContenedorDetalleProductos () {
     
