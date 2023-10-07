@@ -1,6 +1,13 @@
 #producto {
     background-color: #d5bdaf;
     margin: 20px;
+    width: 300px;
+    height: 425px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
 }
 
 h3 {
@@ -11,7 +18,7 @@ h3 {
 #producto button {
     border:none;
     border-radius:5px;
-    margin:5px;
+    margin-top:15px;
     background-color: #f5ebe0;
     color:#76695d;
 }
@@ -19,4 +26,9 @@ h3 {
 #producto button:hover {
     background-color: #76695d;
     color:#f5ebe0;
+}
+
+.fotoProducto {
+    width:95%;
+    height:300px;
 }

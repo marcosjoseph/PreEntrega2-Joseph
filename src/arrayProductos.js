@@ -1,8 +1,13 @@
+import foto1 from "./img/MesaLapachoyHierro.png";
+import foto2 from "./img/EscritorioPinoTeayHierro.png";
+import foto3 from "./img/EspejoQuebracho.png";
+
 
 const listaProductos = [
     {
     "id": "1",
     "categoria": "Mesas",
+    "foto": foto1,
     "nombre": "Mesa Juana",
     "descripcion": "Hecha en Lapacho y Hierro.",
     "precio": 101,
@@ -11,6 +16,7 @@ const listaProductos = [
     {
     "id": "2",
     "categoria": "Escritorios",
+    "foto": foto2,
     "nombre": "Escritorio Tea",
     "descripcion": "Pino Tea reciclada & hierro",
     "precio": 102,
@@ -19,6 +25,7 @@ const listaProductos = [
     {
     "id": "3",
     "categoria": "Espejos",
+    "foto": foto3,
     "nombre": "Espejo Quebacho",
     "descripcion": "Quebracho Colorado",
     "precio": 103,

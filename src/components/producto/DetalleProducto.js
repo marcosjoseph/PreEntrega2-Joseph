@@ -1,11 +1,13 @@
 import "./DetalleProducto.css";
 
-function DetalleProducto ({id, categoria, nombre, descripcion, precio, stock}) {
+function DetalleProducto ({id, categoria,foto, nombre, descripcion, precio, stock}) {
+
     return (
         <div id="detalleProducto">
             <h2>{categoria}</h2>
+            <img src={foto} className="fotoProducto"/>
             <h3>{nombre}</h3>
-            <p>Descripción: {descripcion}</p>
+            <p>{descripcion}</p>
             <p>Precio: ${precio}</p>
             <p>Stock Disponible: {stock}</p>
         </div>
